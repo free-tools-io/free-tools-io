@@ -1,7 +1,7 @@
 {
     "name": "Whois Lookup",
     "description": "Quick and simple whois lookup",
-    "author": "Free-Tools.IO",
+    "author": "free-tools.io",
     "icon": "receipt-outline",
     "npm-packages": [
         "whois-json"

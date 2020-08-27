@@ -1,7 +1,7 @@
 {
     "name": "Base64 Encoder Decoder",
     "description": "Simple tool encode and decode Base64 strings",
-    "author": "Free-Tools.IO",
+    "author": "free-tools.io",
     "icon": "receipt-outline",
     "npm-packages": []
 }

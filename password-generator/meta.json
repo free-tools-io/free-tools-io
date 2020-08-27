@@ -1,7 +1,7 @@
 {
     "name": "Password Generator",
     "description": "A quick online tool generate complex passwords online",
-    "author": "Free-Tools.IO",
+    "author": "free-tools.io",
     "icon": "key",
     "npm-packages": [
         "password-generator@2.3.2"
