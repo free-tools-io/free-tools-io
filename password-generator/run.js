@@ -7,7 +7,8 @@ module.exports.run = (query) => {
 
         return resolve({
             data: generatePassword(query.length ? query.length : 12),
-            status: 'success'
+            status: 'success',
+            title: 'Password generated with length=' + query.length
         });
     });
 }

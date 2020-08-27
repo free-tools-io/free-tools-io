@@ -21,7 +21,8 @@ module.exports.run = (query) => {
         });
         return resolve({
             data: output,
-            status: 'success'
+            status: 'success',
+            title: 'Color generated with hue=' + query.hue
         });
     });
 }
