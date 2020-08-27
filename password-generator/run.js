@@ -1,8 +1,13 @@
 var generatePassword = require('password-generator');
 
 module.exports.run = (query) => {
-    if(query.length && query.length.length > 3)
+    return new Promise((resolve, reject) => {
+        if(query.length && query.length.length > 3)
         query.length = 999;
 
-    return generatePassword(query.length ? query.length : 12);
+        return resolve({
+            data: generatePassword(query.length ? query.length : 12),
+            status: 'success'
+        });
+    });
 }

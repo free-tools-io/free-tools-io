@@ -1,17 +1,28 @@
 
-module.exports.run = (query) => {
-    if(!query.string)
-        return;
-        
-    if(query.string.length > 10000)
-        return "Invalid String or length is greater than 10000"
-
-    if(query.action === 'encode') {
-        let buff = new Buffer(query.string);
-        return buff.toString('base64');
-    } else if(query.action === 'decode') {
-        let buff = new Buffer(query.string, 'base64');
-        return buff.toString('ascii');
-    } else
-        return;
+module.exports.run = (req) => {
+    return new Promise((resolve, reject) => {
+        if(!req.query.string)
+            return resolve();
+            
+        if(req.query.string.length > 10000)
+            return resolve({
+                data: "Invalid String or length is greater than 10000",
+                status: "error"
+            });
+    
+        if(req.query.action === 'encode') {
+            let buff = new Buffer(req.query.string);
+            return resolve({
+                data: buff.toString('base64'),
+                status: "success"
+            });
+        } else if(req.query.action === 'decode') {
+            let buff = new Buffer(req.query.string, 'base64');
+            return resolve({
+                data: buff.toString('ascii'),
+                status: "success"
+            });
+        } else
+            return resolve();
+    })
 }

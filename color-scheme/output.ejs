@@ -1,6 +1,6 @@
 <div class='row'>
-<% for(var i=0; i<Object.keys(output).length; i++) {%>
-    <% var scheme = Object.keys(output)[i] %>
+<% for(var i=0; i<Object.keys(output.data).length; i++) {%>
+    <% var scheme = Object.keys(output.data)[i] %>
     <% var schemeObj = output[scheme] %>
     <% for(var j=0; j<Object.keys(schemeObj).length; j++) {%>
         <% var variation = Object.keys(schemeObj)[j] %>
