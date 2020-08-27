@@ -4,7 +4,7 @@
     "author": "free-tools.io",
     "icon": "receipt-outline",
     "npm-packages": [
-        "selfsigned"
+        "selfsigned@1.10.7"
     ],
     "tags": [
         "security",
