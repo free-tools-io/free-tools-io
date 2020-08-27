@@ -5,5 +5,11 @@
     "icon": "receipt-outline",
     "npm-packages": [
         "whois-json"
+    ],
+    "tags": [
+        "whois",
+        "domain",
+        "lookup",
+        "database"
     ]
 }

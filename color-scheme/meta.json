@@ -5,5 +5,11 @@
     "icon": "color-palette-outline",
     "npm-packages": [
         "color-scheme@1.0.1"
+    ],
+    "tags": [
+        "color",
+        "hexa code",
+        "colour",
+        "generator"
     ]
 }

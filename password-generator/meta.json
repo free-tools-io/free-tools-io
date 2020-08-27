@@ -5,5 +5,11 @@
     "icon": "key",
     "npm-packages": [
         "password-generator@2.3.2"
+    ],
+    "tags": [
+        "security",
+        "encoding",
+        "password",
+        "entropy"
     ]
 }

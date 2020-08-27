@@ -2,6 +2,9 @@ var ColorScheme = require('color-scheme');
 
 module.exports.run = (query) => {
     return new Promise((resolve, reject) => {
+        if(!query.hue)
+            query.hue = 21;
+
         if(query.hue && query.hue.length > 3)
             query.hue = 999;
 
@@ -12,7 +15,7 @@ module.exports.run = (query) => {
         schemes.forEach(xScheme => {
             var obj = {};
             variations.forEach(xVariation => {
-                obj[xVariation] = scheme.from_hue(query.hue?query.hue:21)
+                obj[xVariation] = scheme.from_hue(query.hue)
                                         .scheme(xScheme)
                                         .variation(xVariation)
                                         .colors();

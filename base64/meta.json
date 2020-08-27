@@ -3,5 +3,11 @@
     "description": "Simple tool encode and decode Base64 strings",
     "author": "free-tools.io",
     "icon": "receipt-outline",
-    "npm-packages": []
+    "npm-packages": [],
+    "tags": [
+        "security",
+        "encoding",
+        "decoding",
+        "base64"
+    ]
 }
