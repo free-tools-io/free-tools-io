@@ -1,0 +1,10 @@
+<form>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            <label for="min">Hue</label>
+            <input type="number" class="form-control" id="hue" value="<%= query.hue ? query.hue : 12 %>" name="hue" aria-describedby="minHelp" placeholder="Enter Min Length">
+            <small id="minHelp" class="form-text text-muted">Value from 1-255</small>
+        </div>
+        <button type="submit" style='margin-left: 15px' class="btn btn-primary">Generate</button>
+    </div>
+</form>

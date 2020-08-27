@@ -1,0 +1,10 @@
+<form>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            <label for="min">Length</label>
+            <input type="number" class="form-control" id="min" value="<%= query.length ? query.length : 12 %>" name="length" aria-describedby="minHelp" placeholder="Enter Min Length">
+            <small id="minHelp" class="form-text text-muted">Leave empty to generate with default value</small>
+        </div>
+        <button type="submit" style='margin-left: 15px' class="btn btn-primary">Generate</button>
+    </div>
+</form>

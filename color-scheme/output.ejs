@@ -1,0 +1,22 @@
+<div class='row'>
+<% for(var i=0; i<Object.keys(output).length; i++) {%>
+    <% var scheme = Object.keys(output)[i] %>
+    <% var schemeObj = output[scheme] %>
+    <% for(var j=0; j<Object.keys(schemeObj).length; j++) {%>
+        <% var variation = Object.keys(schemeObj)[j] %>
+        <% var variationObj = schemeObj[variation] %>
+        <div class="col-lg-3">
+            <div class="card" style='margin-top:10px; margin-bottom: 10px'>
+                <div class="card-header">
+                <%= scheme %> <span class="badge badge-success"><%= variation %></span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <% for(var k=0; k<variationObj.length; k++) {%>
+                        <li class="list-group-item" style="background-color: #<%= variationObj[k] %>;"> #<%= variationObj[k] %></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    <% } %>
+<% } %>
+</div>

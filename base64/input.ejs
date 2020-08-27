@@ -1,0 +1,22 @@
+<form>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            <label for="min">String</label>
+            <input type="input" class="form-control" id="string" value="<%= query.string ? query.string : '' %>" name="string" aria-describedby="minHelp" placeholder="Enter Min Length">
+            <small id="minHelp" class="form-text text-muted">Value from 1-255</small>
+        </div>
+        <div class="form-check col-lg-12" style='margin-left: 15px'>
+            <input class="form-check-input" type="radio" name="action" id="exampleRadios1" value="encode" checked>
+            <label class="form-check-label" for="encode">
+                Base64 Encode
+            </label>
+        </div>
+        <div class="form-check col-lg-12" style='margin-left: 15px'>
+            <input class="form-check-input" type="radio" name="action" id="exampleRadios2" value="decode">
+            <label class="form-check-label" for="encode">
+                Base64 Decode
+            </label>
+        </div>
+        <button type="submit" style='margin-left: 15px' class="btn btn-primary">Generate</button>
+    </div>
+</form>

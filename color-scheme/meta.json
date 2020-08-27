@@ -1,0 +1,9 @@
+{
+    "name": "Color Scheme Generator",
+    "description": "Generates various color scheme palete",
+    "author": "Free-Tools.IO",
+    "icon": "color-palette-outline",
+    "npm-packages": [
+        "color-scheme@1.0.1"
+    ]
+}
