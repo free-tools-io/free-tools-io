@@ -1,0 +1,10 @@
+<form>
+    <div class="row">
+        <div class="form-group col-lg-12">
+            <label for="min">Domain Name</label>
+            <input type="input" class="form-control" id="domain" value="<%= query.domain ? query.domain : '' %>" name="domain" aria-describedby="minHelp" placeholder="Enter Domain Name">
+            <small id="minHelp" class="form-text text-muted">Value from 1-255</small>
+        </div>
+        <button type="submit" style='margin-left: 15px' class="btn btn-primary">Generate</button>
+    </div>
+</form>

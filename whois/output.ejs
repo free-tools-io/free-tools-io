@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Key</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+<% for(var i=0; i<Object.keys(output.data).length; i++) {%>
+    <% var key = Object.keys(output.data)[i] %>
+    <% var value = output.data[key] %>
+    <tr>
+        <td><%= key %></td>
+        <td><%= value %></td>
+    </tr>
+<% } %>
+</table>

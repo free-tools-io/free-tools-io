@@ -22,7 +22,7 @@ module.exports.run = (query) => {
         return resolve({
             data: output,
             status: 'success',
-            title: 'Color generated with hue=' + query.hue
+            title: 'Generate color with hue=' + query.hue
         });
     });
 }
