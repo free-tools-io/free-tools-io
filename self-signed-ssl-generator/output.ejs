@@ -1,0 +1,8 @@
+<% for(var i=0; i<Object.keys(output.data).length; i++) {%>
+    <% var name = Object.keys(output.data)[i] %>
+    <% var value = output.data[name] %>
+<h4><%= name %></h4>
+<pre><code>
+    <h5><%= value %></h5>
+</code></pre>
+<% } %>

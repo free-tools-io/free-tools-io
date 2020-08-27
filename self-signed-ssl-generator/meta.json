@@ -1,0 +1,15 @@
+{
+    "name": "SSL Generator (Self Signed)",
+    "description": "Generate quickly self-signed SSL certificates online with one click.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "selfsigned"
+    ],
+    "tags": [
+        "security",
+        "ssl",
+        "self-signed",
+        "certificate"
+    ]
+}
