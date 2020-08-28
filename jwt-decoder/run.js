@@ -1,8 +1,8 @@
-var URLToolkit = require('url-toolkit');
 let Validator = require('validatorjs');
+let jwtDecode = require('jwt-decode');
 
 let rules = {
-    url: 'required|max:10000',
+    jwt: 'required|max:10000',
 };
 
 module.exports.run = (req) => {
@@ -11,9 +11,9 @@ module.exports.run = (req) => {
         
         if(validation.passes()) {
             return resolve({
-                data: URLToolkit.parseURL(req.query.url),
+                data: jwtDecode(req.query.jwt),
                 status: "success",
-                title: "Parse URL - '" + req.query.url.substring(0,25) + "...'"
+                title: "JWT Decode - '" + req.query.jwt.substring(0,10) + "...'"
             });
         } else {
             console.log("VALIDATION ERROR", validation.errors.all());

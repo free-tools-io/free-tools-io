@@ -1,0 +1,31 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        jwt: {
+            type: 'string',
+            title: 'JWT Token',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.jwt ? query.jwt : '' %>"
+        },
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Decode"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

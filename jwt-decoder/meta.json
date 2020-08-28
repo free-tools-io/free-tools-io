@@ -1,0 +1,16 @@
+{
+    "name": "JWT (JSON Web Token) Decoder",
+    "description": "Simple tool decode JWT Token",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "jwt-decode"
+    ],
+    "tags": [
+        "jwt",
+        "decode",
+        "json",
+        "web",
+        "token"
+    ]
+}
