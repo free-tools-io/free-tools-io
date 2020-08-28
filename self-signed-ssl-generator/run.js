@@ -39,7 +39,7 @@ module.exports.run = (req) => {
         return resolve({
             data: pems,
             status: 'success',
-            title: 'Generated SSL Certificate for ' + req.query.days + " days"
+            title: 'Generate SSL Certificate for ' + req.query.days + " days"
         });
     })
 }
