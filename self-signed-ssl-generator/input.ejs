@@ -1,21 +1,21 @@
 <form>
     <div class="row">
-        <div class="form-group col-lg-6">
+        <div class="form-group col-lg-12">
             <label for="min">Days</label>
             <input type="number" class="form-control" id="days" value="<%= query.days ? query.days : '' %>" name="days" aria-describedby="minHelp" placeholder="Enter days">
             <small id="minHelp" class="form-text text-muted">Any number value stating days for which certificate is valid</small>
         </div>
-        <div class="form-group col-lg-6">
+        <div class="form-group col-lg-12">
             <label for="min">Key Size</label>
             <input type="number" class="form-control" id="key_size" value="<%= query.key_size ? query.key_size : '' %>" name="key_size" aria-describedby="minHelp" placeholder="Enter Key Size in number">
             <small id="minHelp" class="form-text text-muted">Key Size. Default: 2048</small>
         </div>
-        <div class="form-group col-lg-6">
+        <div class="form-group col-lg-12">
             <label for="min">Common Name</label>
             <input type="input" class="form-control" id="client_certificate_cn" value="<%= query.client_certificate_cn ? query.client_certificate_cn : '' %>" name="client_certificate_cn" aria-describedby="minHelp" placeholder="Enter Common Name">
             <small id="minHelp" class="form-text text-muted">Any valid common name (Ex: free-tools.io) </small>
         </div>
-        <div class="form-group col-lg-6">
+        <div class="form-group col-lg-12">
             <label for="min">Algorithm</label>
             <input type="input" class="form-control" id="algorithm" value="<%= query.algorithm ? query.algorithm : '' %>" name="algorithm" aria-describedby="minHelp" placeholder="Enter algorithm">
             <small id="minHelp" class="form-text text-muted">Any valid algorithm name (Ex: sha1, sha256, etc...) </small>
