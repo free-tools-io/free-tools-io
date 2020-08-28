@@ -3,7 +3,9 @@
     "description": "Simple tool convert between currencies",
     "author": "free-tools.io",
     "icon": "receipt-outline",
-    "npm-packages": [],
+    "npm-packages": [
+        "currency-converter-lt@1.0.0"
+    ],
     "tags": [
         "currency",
         "converter",
