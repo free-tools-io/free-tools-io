@@ -1,0 +1,18 @@
+{
+    "name": "Beautify JSON/XML/CSS/JS/HTML",
+    "description": "Beautify multiple code formats. This tool supports JSON, XML, CSS, JS, HTML",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [],
+    "tags": [
+        "beautify",
+        "format",
+        "pretty",
+        "json",
+        "xml",
+        "css",
+        "js",
+        "javascript",
+        "html"
+    ]
+}

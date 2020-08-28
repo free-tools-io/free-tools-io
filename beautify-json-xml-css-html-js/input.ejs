@@ -1,0 +1,37 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        format: {
+            type: "string",
+            title: "Format",
+            enum: [ "CSS", "JS", "JSON", "HTML", "XML" ],
+            default: "<%= query.format ? query.format : 'JSON' %>"
+        },
+        code: {
+            type: 'textarea',
+            title: 'Code',
+            required: true,
+            maxLength: 10000,
+            default: ""
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Beautify"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  
