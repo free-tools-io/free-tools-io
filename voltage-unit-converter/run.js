@@ -18,7 +18,7 @@ module.exports.run = (req) => {
             return resolve({
                 data: converter(req.query.value).from(req.query.from).to(req.query.to),
                 status: "success",
-                title: req.query.value + req.query.from + " in '" + converter().describe(req.query.to).plural
+                title: req.query.value + req.query.from + " in " + converter().describe(req.query.to).plural
             });
         } else {
             console.log("VALIDATION ERROR", validation.errors.all());
