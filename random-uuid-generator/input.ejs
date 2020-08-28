@@ -1,0 +1,38 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        version: {
+            type: "string",
+            title: "Version",
+            enum: [ "v1", "v4", 'NIL' ],
+            default: "<%= query.version ? query.version : 'v4' %>"
+        },
+        number: {
+            type: "number",
+            title: "Number",
+            default: "<%= query.number ? query.number : '5' %>",
+            description: "Range 1-500",
+            maximum: 500,
+            minimum: 1
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "OK Go"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

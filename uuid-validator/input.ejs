@@ -1,0 +1,29 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        uuid: {
+            type: "string",
+            title: "UUID",
+            maxLength: 100,
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Validate"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

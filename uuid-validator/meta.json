@@ -1,0 +1,14 @@
+{
+    "name": "UUID Validator",
+    "description": "Simple tool validate UUID with v1, v3, v4, v5",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "uuid"
+    ],
+    "tags": [
+        "security",
+        "uuid",
+        "validator"
+    ]
+}
