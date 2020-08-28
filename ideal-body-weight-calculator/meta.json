@@ -1,0 +1,19 @@
+{
+    "name": "Ideal Body Weight Calculator",
+    "description": "Quick online Ideal Body Weight Calculator.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "fitness-health-calculations"
+    ],
+    "tags": [
+        "fitness",
+        "health",
+        "calculate",
+        "weight",
+        "calculator",
+        "female",
+        "male",
+        "weight-calculator"
+    ]
+}

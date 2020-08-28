@@ -1,0 +1,19 @@
+{
+    "name": "Daily Calorie Needs Calculator",
+    "description": "Quick online Daily Calorie Needs Calculator. Total daily caloric needs based on weight goal.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "fitness-health-calculations"
+    ],
+    "tags": [
+        "fitness",
+        "health",
+        "calculate",
+        "calorie",
+        "calculator",
+        "energy",
+        "workout",
+        "calorie-calculator"
+    ]
+}

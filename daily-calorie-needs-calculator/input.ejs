@@ -1,0 +1,71 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        age: {
+            type: 'number',
+            title: 'Age',
+            required: true,
+            maximum: 100,
+            default: "<%= query.age ? query.age : '18' %>"
+        },
+        gender: {
+            type: "string",
+            title: "Gender",
+            enum: [ "Male", "Female" ],
+            default: "<%= query.gender ? query.gender : 'Male' %>"
+        },
+        height: {
+            type: 'number',
+            title: 'Height',
+            required: true,
+            maximum: 100,
+            default: "<%= query.height ? query.height : '160' %>",
+            description: "Your height, can be either in FEETS or CENTIMETERS"
+        },
+        weight: {
+            type: 'number',
+            title: 'Weight',
+            required: true,
+            maximum: 300,
+            default: "<%= query.weight ? query.weight : '65' %>",
+            description: "Your weight, can be either in POUNDS or KILOGRAMS"
+        },
+        activity: {
+            type: "string",
+            title: "Activity Level",
+            enum: [ "sedentary", "light", "moderate", "high", "extreme" ],
+            default: "<%= query.activity ? query.activity : 'moderate' %>"
+        },
+        goal: {
+            type: "string",
+            title: "Goal",
+            enum: [ "reduction", "maintain", "gain" ],
+            default: "<%= query.goal ? query.goal : 'maintain' %>"
+        },
+        approach: {
+            type: "string",
+            title: "Approach",
+            enum: [ "slow", "normal", "agressive", "very agressive" ],
+            default: "<%= query.approach ? query.approach : 'normal' %>"
+        },
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Calculate Calories"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

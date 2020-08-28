@@ -1,0 +1,44 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        gender: {
+            type: "string",
+            title: "Gender",
+            enum: [ "Male", "Female" ],
+            default: "<%= query.gender ? query.gender : 'Male' %>"
+        },
+        height: {
+            type: 'number',
+            title: 'Height',
+            required: true,
+            maximum: 100,
+            default: "<%= query.height ? query.height : '160' %>",
+            description: "Your height, can be either in FEETS or CENTIMETERS"
+        },
+        units: {
+            type: "string",
+            title: "Units",
+            enum: [ "metric", "imperial" ],
+            default: "<%= query.units ? query.units : 'metric' %>"
+        },
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Calculate Calories"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  
