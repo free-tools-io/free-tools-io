@@ -1,0 +1,13 @@
+{
+    "name": "Currency Converter",
+    "description": "Simple tool convert between currencies",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [],
+    "tags": [
+        "currency",
+        "converter",
+        "crypto",
+        "crypto-currency"
+    ]
+}
