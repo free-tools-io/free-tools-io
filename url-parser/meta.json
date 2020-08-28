@@ -1,0 +1,15 @@
+{
+    "name": "HTTP URL Parser",
+    "description": "Simple tool parse URL and extract various parts of the URL",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "url-toolkit@2.2.0"
+    ],
+    "tags": [
+        "parser",
+        "http",
+        "url",
+        "https"
+    ]
+}

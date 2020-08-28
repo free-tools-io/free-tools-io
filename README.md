@@ -69,7 +69,7 @@ Port number can be changed by setting environment variable `PORT`
 
 ## Deploy to Production (free-tools.io)
 Raise PR to our master Git Repo https://github.com/free-tools-io/free-tools-io
-After the review and automated testing, This would deployed to production at https://free-tools.io
+After the review and automated testing, This would be deployed to production at https://free-tools.io
 
 ## Guidelines for Tool Development
 * It is very important to have input validations and efficient algorithm to avoid resource clogging and hacking attempts.
