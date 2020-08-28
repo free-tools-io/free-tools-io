@@ -1,0 +1,17 @@
+{
+    "name": "Voltage Unit Converter",
+    "description": "Simple tool convert between voltage units (V, mV, kV)",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "convert-units@2.3.4"
+    ],
+    "tags": [
+        "converter",
+        "volt",
+        "voltage",
+        "milli-volt",
+        "kilo-volt",
+        "unit-converter"
+    ]
+}

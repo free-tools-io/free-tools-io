@@ -1,0 +1,12 @@
+{
+  "name": "ftio-tool",
+  "version": "1.0.0",
+  "description": "",
+  "author": "free-tools.io",
+  "license": "ISC",
+  "dependencies": {
+    "convert-units": "^2.3.4",
+    "ftio-sdk": "0.0.0",
+    "validatorjs": "^3.19.2"
+  }
+}

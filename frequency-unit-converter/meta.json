@@ -1,0 +1,20 @@
+{
+    "name": "Frequency Unit Converter",
+    "description": "Simple tool convert between frequency units (Hz, mHz, kHz, MHz, GHz, THz, rpm, deg/s, rad/s)",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "convert-units@2.3.4"
+    ],
+    "tags": [
+        "converter",
+        "hertz",
+        "milli-hertz",
+        "frequency",
+        "mega-hertz",
+        "gita-hertz",
+        "degree",
+        "radius",
+        "unit-converter"
+    ]
+}

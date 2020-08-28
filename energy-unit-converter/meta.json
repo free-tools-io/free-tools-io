@@ -1,0 +1,17 @@
+{
+    "name": "Energy Unit Converter",
+    "description": "Simple tool convert between energy units (Wh, mWh, kWh, MWh, GWh, J, kJ)",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "convert-units@2.3.4"
+    ],
+    "tags": [
+        "converter",
+        "watt-hour",
+        "watt",
+        "joule",
+        "energy",
+        "unit-converter"
+    ]
+}

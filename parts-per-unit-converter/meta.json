@@ -1,0 +1,18 @@
+{
+    "name": "Parts-Per Unit Converter",
+    "description": "Simple tool convert between parts-per units (ppm, ppb, ppt, ppq)",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "convert-units@2.3.4"
+    ],
+    "tags": [
+        "converter",
+        "parts-per",
+        "unit-converter",
+        "ppm",
+        "ppb",
+        "ppt",
+        "ppq"
+    ]
+}

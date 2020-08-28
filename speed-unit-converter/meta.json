@@ -1,0 +1,19 @@
+{
+    "name": "Speed Unit Converter",
+    "description": "Simple tool convert between speed units (m/s, km/h, m/h, knot, ft/s)",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "convert-units@2.3.4"
+    ],
+    "tags": [
+        "converter",
+        "meter",
+        "kilo-meter",
+        "speed",
+        "feet",
+        "mile",
+        "metre",
+        "unit-converter"
+    ]
+}

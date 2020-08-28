@@ -1,0 +1,43 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        value: {
+            type: 'number',
+            title: 'Value',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.value ? query.value : '' %>"
+        },
+        from: {
+            type: "string",
+            title: "From Unit",
+            enum: [ "mm3/s", "cm3/s", "ml/s", "cl/s", "dl/s", "l/s", "l/min", "l/h", "kl/s", "kl/min", "kl/h", "m3/s", "m3/min", "m3/h", "km3/s", "tsp/s", "Tbs/s", "in3/s", "in3/min", "in3/h", "fl-oz/s", "fl-oz/min", "fl-oz/h", "cup/s", "pnt/s", "pnt/min", "pnt/h", "qt/s", "gal/s", "gal/min", "gal/h", "ft3/s", "ft3/min", "ft3/h", "yd3/s", "yd3/min", "yd3/h" ],
+            default: "<%= query.from ? query.from : 'cm' %>"
+        },
+        to: {
+            type: "string",
+            title: "To Unit",
+            enum: [ "mm3/s", "cm3/s", "ml/s", "cl/s", "dl/s", "l/s", "l/min", "l/h", "kl/s", "kl/min", "kl/h", "m3/s", "m3/min", "m3/h", "km3/s", "tsp/s", "Tbs/s", "in3/s", "in3/min", "in3/h", "fl-oz/s", "fl-oz/min", "fl-oz/h", "cup/s", "pnt/s", "pnt/min", "pnt/h", "qt/s", "gal/s", "gal/min", "gal/h", "ft3/s", "ft3/min", "ft3/h", "yd3/s", "yd3/min", "yd3/h" ],
+            default: "<%= query.to ? query.to : 'in' %>"
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Convert"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

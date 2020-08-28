@@ -1,0 +1,43 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        value: {
+            type: 'number',
+            title: 'Value',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.value ? query.value : '' %>"
+        },
+        from: {
+            type: "string",
+            title: "From Unit",
+            enum: [ "VA", "mVA", "kVA", "MVA", "GVA"],
+            default: "<%= query.from ? query.from : 'VA' %>"
+        },
+        to: {
+            type: "string",
+            title: "To Unit",
+            enum: [ "VA", "mVA", "kVA", "MVA", "GVA"],
+            default: "<%= query.to ? query.to : 'kVA' %>"
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Convert"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

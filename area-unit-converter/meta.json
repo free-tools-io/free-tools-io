@@ -1,0 +1,19 @@
+{
+    "name": "Area Unit Converter",
+    "description": "Simple tool convert between area units (mm2, cm2, m2, ha, km2, in2, ft2, ac, mi2)",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "convert-units@2.3.4"
+    ],
+    "tags": [
+        "converter",
+        "milli-meter",
+        "centi-meter",
+        "area",
+        "feet",
+        "mile",
+        "metre",
+        "unit-converter"
+    ]
+}
