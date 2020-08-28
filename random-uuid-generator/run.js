@@ -23,7 +23,7 @@ module.exports.run = (req) => {
                 return resolve({
                     data: uuids,
                     status: "success",
-                    title: "Random UUID generated " + req.query.number + " with " + req.query.version
+                    title: "Random " + req.query.number + " UUIDs generated with " + req.query.version
                 });
             } else {
                 var uuids = [];
@@ -33,7 +33,7 @@ module.exports.run = (req) => {
                 return resolve({
                     data: uuids,
                     status: "success",
-                    title: "Random UUID generated " + req.query.number + " with " + req.query.version
+                    title: "Random " + req.query.number + " UUIDs generated with " + req.query.version
                 });
             }
         } else {
