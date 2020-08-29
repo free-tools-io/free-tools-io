@@ -1,0 +1,43 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        string: {
+            type: 'string',
+            title: 'String',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.string ? query.string : '' %>"
+        },
+        from: {
+            type: "string",
+            title: "From Language",
+            enum: [ "ahom", "assamese", "avestan", "balinese", "bengali", "bhaisuki", "brahmi", "brahmi_tamil", "burmese", "chakma", "cham", "cyrillic", "devanagari", "dogra", "gondi_gunjala", "gondi_masaram", "grantha", "grantha_pandya", "gujarati", "gurmukhi", "hk", "iast", "itrans", "itrans_dravidian", "javanese", "kannada", "khamti_shan", "kharoshti", "khmer", "khom_thai", "khudawadi", "kolkata", "lao", "lao_pali", "lepcha", "limbu", "mahajani", "malayalam", "manipuri", "marchen", "modi", "mon", "mro", "multani", "newa", "ol_chiki", "oriya", "persian_old", "phags_pa", "ranjana", "rejang", "rohingya", "sanskritOCR", "shan", "sharada", "siddham", "sinhala", "slp1", "sora_sompeng", "sundanese", "syloti_nagari", "tagalog", "tagbanwa", "tai_laing", "takri", "tamil", "tamil_extended", "tamil_superscripted", "telugu", "thai", "tibetan", "tirhuta_maithili", "urdu", "vattelutu", "velthuis", "wancho", "warang_citi", "wx", "zanbazar_square" ],
+            default: "<%= query.from ? query.from : 'devanagari' %>"
+        },
+        to: {
+            type: "string",
+            title: "To Language",
+            enum: [ "ahom", "assamese", "avestan", "balinese", "bengali", "bhaisuki", "brahmi", "brahmi_tamil", "burmese", "chakma", "cham", "cyrillic", "devanagari", "dogra", "gondi_gunjala", "gondi_masaram", "grantha", "grantha_pandya", "gujarati", "gurmukhi", "hk", "iast", "itrans", "itrans_dravidian", "javanese", "kannada", "khamti_shan", "kharoshti", "khmer", "khom_thai", "khudawadi", "kolkata", "lao", "lao_pali", "lepcha", "limbu", "mahajani", "malayalam", "manipuri", "marchen", "modi", "mon", "mro", "multani", "newa", "ol_chiki", "oriya", "persian_old", "phags_pa", "ranjana", "rejang", "rohingya", "sanskritOCR", "shan", "sharada", "siddham", "sinhala", "slp1", "sora_sompeng", "sundanese", "syloti_nagari", "tagalog", "tagbanwa", "tai_laing", "takri", "tamil", "tamil_extended", "tamil_superscripted", "telugu", "thai", "tibetan", "tirhuta_maithili", "urdu", "vattelutu", "velthuis", "wancho", "warang_citi", "wx", "zanbazar_square" ],
+            default: "<%= query.to ? query.to : 'iast' %>"
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "OK Go"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  
