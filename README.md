@@ -4,7 +4,11 @@ This repository contains code for all tools running at https://free-tools.io We 
 Thank you for showing interest in creating a new tools for the public. It is very easy to develop a tool with our simple SDK. All the tools are developed with NodeJS.
 
 ## Got your Idea?
-Follow the guide to create new tool.
+* Fork Github project https://github.com/free-tools-io/free-tools-io to your github.com account
+* Create new folder for your tool (Folder name to be clear and denotes the tool)
+* Inside the folder create your tool with this FTIO SDK (https://www.npmjs.com/package/ftio-sdk)
+* After testing, Raise pull-request to https://github.com/free-tools-io/free-tools-io at master branch
+* After review and validation, it would be deployed to production at https://free-tools.io
 
 ## Creating New Tool
 
@@ -72,10 +76,10 @@ Raise PR to our master Git Repo https://github.com/free-tools-io/free-tools-io
 After the review and automated testing, This would be deployed to production at https://free-tools.io
 
 ## Guidelines for Tool Development
-* It is very important to have input validations and efficient algorithm to avoid resource clogging and hacking attempts.
-* DO NOT access or store anything on local file system
-* DO NOT have any unauthorized calls to external services/systems.
-* Ensure that the dependant libraries used are licensed to run at free-tools.io and does not have any vulnerabilities.
-* Avoid caching heavy data on memory. Destroy the data as soon as the execution is completed.
+Refer: https://github.com/free-tools-io/free-tools-io/blob/master/CONTRIBUTING.md
 
-Thank you !!!
+That's all. You are done. Wait for our response.
+
+For any queries, ask at https://github.com/free-tools-io/free-tools-io/issues/new
+
+Thank You !!!
