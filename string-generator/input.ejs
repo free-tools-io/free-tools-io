@@ -1,0 +1,48 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        length: {
+            type: 'integer',
+            title: 'Length',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.length ? query.length : '32' %>"
+        },
+        readable: {
+            type: "boolean",
+            title: "Readable",
+            default: <%= query.readable === 'true' ? 'true' : 'false' %>
+        },
+        charset: {
+            type: "string",
+            title: "Character Set",
+            enum: [ "alphanumeric", "alphabetic", "numeric", "hex" ],
+            default: "<%= query.charset ? query.charset : 'alphanumeric' %>"
+        },
+        capitalization: {
+            type: "string",
+            title: "Capitalization",
+            enum: [ "mixedcase", "lowercase", "uppercase" ],
+            default: "<%= query.capitalization ? query.capitalization : 'mixedcase' %>"
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Generate"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  
