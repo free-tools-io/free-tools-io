@@ -1,0 +1,16 @@
+{
+    "name": "Indian Pincode Lookup/Search",
+    "description": "Simple tool to lookup indian pincodes",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "india-pincode-lookup@1.0.3"
+    ],
+    "tags": [
+        "indian",
+        "pincode",
+        "lookup",
+        "search",
+        "geo"
+    ]
+}

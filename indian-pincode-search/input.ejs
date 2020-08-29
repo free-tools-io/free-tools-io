@@ -1,0 +1,31 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        pin: {
+            type: 'string',
+            title: 'Pincode',
+            required: true,
+            maxLength: 6,
+            default: "<%= query.pin ? query.pin : '' %>"
+        }
+    },
+    form: [
+        '*',
+        {
+            type: "submit",
+            title: "Lookup"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

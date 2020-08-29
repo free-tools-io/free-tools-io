@@ -1,0 +1,13 @@
+<% for(var j=0; j<output.data.length; j++) {%>
+<% var object = output.data[j] %>
+    <table class="table-bordered table table-striped">
+    <% for(var i=0; i<Object.keys(object).length; i++) {%>
+        <% var key = Object.keys(object)[i] %>
+        <% var value = object[key] %>
+        <tr>
+            <td><%= key %></td>
+            <td><%= value %></td>
+        </tr>
+    <% } %>
+    </table>
+<% } %>
