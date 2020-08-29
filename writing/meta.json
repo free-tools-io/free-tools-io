@@ -1,0 +1,17 @@
+{
+    "name": "Writing - Markdown/LaTex Editor Viewer",
+    "description": "Lightweight distraction-free text editor, in the browser (Markdown and LaTeX supported). No lag when writing.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "type": "external",
+    "externalLink": "https://more.free-tools.io/writing",
+    "npm-packages": [],
+    "tags": [
+        "writing",
+        "markdown",
+        "latex",
+        "editor",
+        "viewer",
+        "javascript"
+    ]
+}

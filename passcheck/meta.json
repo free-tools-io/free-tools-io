@@ -1,0 +1,16 @@
+{
+    "name": "PassCheck",
+    "description": "A web application featuring some handy password tools, including a password generator, strength checker and HaveIBeenPwned breach checker.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "type": "external",
+    "externalLink": "https://more.free-tools.io/passcheck",
+    "npm-packages": [],
+    "tags": [
+        "password",
+        "generator",
+        "check",
+        "password-check",
+        "breach-check"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Turndown - HTML to Markdown Converter",
+    "description": "HTML to Markdown converter written in JavaScript.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "type": "external",
+    "externalLink": "https://more.free-tools.io/turndown",
+    "npm-packages": [],
+    "tags": [
+        "turndown",
+        "html",
+        "markdown",
+        "converter"
+    ]
+}

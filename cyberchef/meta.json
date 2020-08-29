@@ -1,0 +1,30 @@
+{
+    "name": "CyberChef",
+    "description": "Perform all manner of 'cyber' operations within a web browser such as AES, DES and Blowfish encryption and decryption, creating hexdumps, calculating hashes, and much more.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "type": "external",
+    "externalLink": "https://more.free-tools.io/cyberchef",
+    "npm-packages": [],
+    "tags": [
+        "cyber",
+        "chef",
+        "cyberchef",
+        "security",
+        "hash",
+        "encryption",
+        "AES",
+        "DES",
+        "Blowfish",
+        "binary",
+        "hexdump",
+        "compression",
+        "decompression",
+        "data",
+        "checksum",
+        "IPv6",
+        "X509",
+        "parsing",
+        "character-encoding"
+    ]
+}

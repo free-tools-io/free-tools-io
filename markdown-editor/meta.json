@@ -1,0 +1,15 @@
+{
+    "name": "Markdown Editor/Viewer",
+    "description": "Create and Edit markdown online at client side. Very useful to create README file and other markdown files.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "type": "external",
+    "externalLink": "https://more.free-tools.io/markdown-editor",
+    "npm-packages": [],
+    "tags": [
+        "markdown",
+        "editor",
+        "viewer",
+        "file"
+    ]
+}
