@@ -1,0 +1,53 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        string: {
+            type: 'string',
+            title: 'String',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.string ? query.string : '' %>"
+        },
+        pw: {
+            type: 'password',
+            title: 'Password',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.pw ? query.pw : '' %>"
+        },
+        type: {
+            type: "string",
+            title: "HMAC Type",
+            enum: [ "HmacMD5", "HmacSHA1", "HmacSHA256", "HmacSHA512" ],
+            default: "<%= query.type ? query.type : 'HmacMD5' %>"
+        }
+    },
+    form: [
+        {
+            key: "string",
+            type: "textarea"
+        },
+        {
+            key: "pw"
+        },
+        {
+            key: "type"
+        },
+        {
+            type: "submit",
+            title: "OK Go"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

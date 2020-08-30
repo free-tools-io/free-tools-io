@@ -1,0 +1,30 @@
+{
+    "name": "AES Encrypt / Decrypt",
+    "description": "Simple tool to encrypt and decrypt using AES. The Advanced Encryption Standard (AES) is a U.S. Federal Information Processing Standard (FIPS). It was selected after a 5-year process where 15 competing designs were evaluated. This tool supports AES-128, AES-192, and AES-256. It will pick the variant by the size of the key you pass in. If you use a passphrase, then it will generate a 256-bit key.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "aes",
+        "cipher",
+        "aes-128",
+        "aes-192",
+        "aes-256",
+        "crypto",
+        "cryptography",
+        "security",
+        "hash",
+        "encrypt",
+        "encryption",
+        "decrypt",
+        "decryption",
+        "crypto",
+        "cryptography",
+        "security",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}

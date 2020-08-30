@@ -1,0 +1,54 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        string: {
+            type: 'string',
+            title: 'String',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.string ? query.string : '' %>"
+        },
+        pw: {
+            type: 'password',
+            title: 'Password',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.pw ? query.pw : '' %>"
+        },
+        action: {
+            type: "string",
+            title: "Action",
+            enum: [ "Encrypt", "Decrypt" ],
+            default: "<%= query.action ? query.action : 'Encrypt' %>"
+        }
+    },
+    form: [
+        {
+            key: "string",
+            type: "textarea"
+        },
+        {
+            key: 'pw'
+        },
+        {
+            key: "action",
+            type: "radios"
+        },
+        {
+            type: "submit",
+            title: "OK Go"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

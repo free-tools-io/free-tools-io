@@ -1,0 +1,20 @@
+{
+    "name": "SHA512 (SHA2) Hash Generator",
+    "description": "Simple tool sha512 (sha2) strings for the text content online. SHA-512 is largely identical to SHA-256 but operates on 64-bit words rather than 32.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "sha512",
+        "crypto",
+        "cryptography",
+        "security",
+        "sha2",
+        "hash",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Rabbit Encrypt / Decrypt",
+    "description": "Simple tool to encrypt and decrypt using Rabbit. Rabbit is a high-performance stream cipher and a finalist in the eSTREAM Portfolio. It is one of the four designs selected after a 3 1/2-year process where 22 designs were evaluated.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "rabbit",
+        "cipher",
+        "crypto",
+        "cryptography",
+        "security",
+        "hash",
+        "encrypt",
+        "encryption",
+        "decrypt",
+        "decryption",
+        "crypto",
+        "cryptography",
+        "security",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}

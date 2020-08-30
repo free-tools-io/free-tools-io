@@ -1,0 +1,19 @@
+{
+    "name": "SHA1 Hash Generator",
+    "description": "Simple tool sha1 strings for the text content online. The SHA hash functions were designed by the National Security Agency (NSA). SHA-1 is the most established of the existing SHA hash functions, and it's used in a variety of security applications and protocols. Though, SHA-1's collision resistance has been weakening as new attacks are discovered or improved.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "sha1",
+        "crypto",
+        "cryptography",
+        "security",
+        "hash",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}

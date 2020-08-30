@@ -1,0 +1,17 @@
+{
+    "name": "SHA256 (SHA2) Hash Generator",
+    "description": "Simple tool sha256 (sha2) strings for the text content online. SHA-256 is one of the four variants in the SHA-2 set. It isn't as widely used as SHA-1, though it appears to provide much better security.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "sha256",
+        "sha2",
+        "hash",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "RC4Drop Encrypt / Decrypt",
+    "description": "Simple tool to encrypt and decrypt using RC4Drop. It was discovered that the first few bytes of keystream are strongly non-random and leak information about the key. We can defend against this attack by discarding the initial portion of the keystream. This modified algorithm is traditionally called RC4-drop. By default, 192 words (768 bytes) are dropped by this tool.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "rc4drop",
+        "rc4",
+        "cipher",
+        "crypto",
+        "cryptography",
+        "security",
+        "hash",
+        "encrypt",
+        "encryption",
+        "decrypt",
+        "decryption",
+        "crypto",
+        "cryptography",
+        "security",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}

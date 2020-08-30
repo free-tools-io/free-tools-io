@@ -1,0 +1,53 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        pw: {
+            type: 'password',
+            title: 'Password',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.pw ? query.pw : '' %>"
+        },
+        iterations: {
+            type: 'number',
+            title: 'Iterations',
+            description: 'max 10000',
+            required: true,
+            maxLength: 100,
+            default: "<%= query.iterations ? query.iterations : '5' %>"
+        },
+        size: {
+            type: "string",
+            title: "Key Size",
+            enum: [ "128", "256", "512" ],
+            default: "<%= query.size ? query.size : '128' %>"
+        }
+    },
+    form: [
+        {
+            key: "pw"
+        },
+        {
+          key: "size"
+        },
+        {
+            key: "iterations"
+        },
+        {
+            type: "submit",
+            title: "OK Go"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

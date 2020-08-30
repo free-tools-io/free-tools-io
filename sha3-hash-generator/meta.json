@@ -1,0 +1,23 @@
+{
+    "name": "SHA3 Hash Generator",
+    "description": "Simple tool sha3 (512, 384, 256, 224) strings for the text content online. SHA-3 is the winner of a five-year competition to select a new cryptographic hash algorithm where 64 competing designs were evaluated. Each of the SHA-3 functions is based on an instance of the Keccak algorithm, which NIST selected as the winner of the SHA-3 competition, but those SHA-3 functions won't produce hashes identical to Keccak.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-js@4.0.0"
+    ],
+    "tags": [
+        "sha3",
+        "Keccak",
+        "crypto",
+        "cryptography",
+        "security",
+        "crypto",
+        "cryptography",
+        "security",
+        "hash",
+        "hashing",
+        "generator",
+        "hash-generator"
+    ]
+}
