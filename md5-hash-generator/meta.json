@@ -2,7 +2,7 @@
     "name": "MD5 Hash Generator",
     "description": "Simple tool md5 strings for the text content online. MD5 is a widely used hash function. It's been used in a variety of security applications and is also commonly used to check the integrity of files. Though, MD5 is not collision resistant, and it isn't suitable for applications like SSL certificates or digital signatures that rely on this property.",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "finger-print-outline",
     "npm-packages": [
         "crypto-js@4.0.0"
     ],

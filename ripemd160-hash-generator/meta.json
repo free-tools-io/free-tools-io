@@ -2,7 +2,7 @@
     "name": "RIPEMD-160 Hash Generator",
     "description": "Simple tool ripemd-160 strings for the text content online. RIPEMD (RIPE Message Digest) is a family of cryptographic hash functions developed in 1992 (the original RIPEMD) and 1996 (other variants). There are five functions in the family: RIPEMD, RIPEMD-128, RIPEMD-160, RIPEMD-256, and RIPEMD-320, of which RIPEMD-160 is the most common.",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "finger-print-outline",
     "npm-packages": [
         "crypto-js@4.0.0"
     ],

@@ -2,7 +2,7 @@
     "name": "Triple DES Encrypt / Decrypt",
     "description": "Simple tool to encrypt and decrypt using Triple DES.Triple DES applies DES three times to each block to increase the key size. The algorithm is believed to be secure in this form.",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "finger-print-outline",
     "npm-packages": [
         "crypto-js@4.0.0"
     ],

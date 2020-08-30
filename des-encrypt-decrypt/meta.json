@@ -2,7 +2,7 @@
     "name": "DES Encrypt / Decrypt",
     "description": "Simple tool to encrypt and decrypt using DES. DES is a previously dominant algorithm for encryption, and was published as an official Federal Information Processing Standard (FIPS). DES is now considered to be insecure due to the small key size.",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "finger-print-outline",
     "npm-packages": [
         "crypto-js@4.0.0"
     ],

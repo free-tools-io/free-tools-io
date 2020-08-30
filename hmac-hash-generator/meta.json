@@ -2,7 +2,7 @@
     "name": "HMAC (MD5, SHA1, SHA256, SHA512) Hash Generator",
     "description": "Simple tool hmac (MD5, SHA1, SHA256, SHA512)strings for the text content online. Keyed-hash message authentication codes (HMAC) is a mechanism for message authentication using cryptographic hash functions. HMAC can be used in combination with any iterated cryptographic hash function.",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "finger-print-outline",
     "npm-packages": [
         "crypto-js@4.0.0"
     ],

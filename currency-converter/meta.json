@@ -2,7 +2,7 @@
     "name": "Currency Converter",
     "description": "Simple tool convert between currencies",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "cash-outline",
     "npm-packages": [
         "currency-converter-lt@1.0.0"
     ],

@@ -2,7 +2,7 @@
     "name": "Length Unit Converter",
     "description": "Simple tool convert between length units (mm, cm, m, in, ft-us, ft, fathom, mi, nMi)",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "swap-horizontal-outline",
     "npm-packages": [
         "convert-units@2.3.4"
     ],
