@@ -1,0 +1,16 @@
+{
+    "name": "Find My IP",
+    "description": "Simple tool find your public IP",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "request-ip@2.1.3"
+    ],
+    "tags": [
+        "ip",
+        "ip-address",
+        "address",
+        "my-ip",
+        "find"
+    ]
+}
