@@ -2,9 +2,9 @@
     "name": "JWT (JSON Web Token) Decoder",
     "description": "Simple tool decode JWT Token",
     "author": "free-tools.io",
-    "icon": "receipt-outline",
+    "icon": "finger-print-outline",
     "npm-packages": [
-        "finger-print-outline"
+        "jwt-decode"
     ],
     "tags": [
         "jwt",
