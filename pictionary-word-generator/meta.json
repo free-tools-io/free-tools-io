@@ -1,0 +1,17 @@
+{
+    "name": "Pictionary Word Generator",
+    "description": "Generates random words for pictionary game play.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "word-pictionary-list@1.0.4"
+    ],
+    "tags": [
+        "game",
+        "generator",
+        "pictionary",
+        "random",
+        "word",
+        "time-pass"
+    ]
+}
