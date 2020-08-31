@@ -1,0 +1,15 @@
+{
+    "name": "Coin Flip",
+    "description": "Simple tool simulate coin flip and show the result",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "coinflip@1.0.0"
+    ],
+    "tags": [
+        "luck",
+        "coin",
+        "flip",
+        "random"
+    ]
+}
