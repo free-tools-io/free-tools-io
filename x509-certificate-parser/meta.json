@@ -1,0 +1,16 @@
+{
+    "name": "x509 Certificate Parser",
+    "description": "Simple tool parse and get details of Certificate details",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [],
+    "tags": [
+        "security",
+        "cryptography",
+        "crypto",
+        "x509",
+        "certificate",
+        "crt",
+        "parser"
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "name": "Crypto Address Balance Checker",
+    "description": "Check crypto wallet balance online for any crypto currency address. It supports almost all crypto addresses like Bitcoin, Litecoin, Dogecoin, Ethereum, Counterparty, Open Assets Protocol, Ripple and Ripple based IOUs, Omni, NXT and NXT AE, NEM, Bitshares with account names, Factom, Dash, PeerCoin, Blackcoin, Grantcoin, CapriCoin, Rubycoin, etc...",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "crypto-balances@2.1.3"
+    ],
+    "tags": [
+        "crypto",
+        "encoding",
+        "balance-checker",
+        "checker",
+        "wallet",
+        "balance",
+        "Bitcoin",
+        "Litecoin",
+        "Dogecoin",
+        "Ethereum",
+        "Counterparty",
+        "Open Assets Protocol",
+        "Ripple and Ripple based IOUs",
+        "Omni",
+        "NXT and NXT AE",
+        "NEM",
+        "Bitshares with account names",
+        "Factom",
+        "Dash",
+        "PeerCoin",
+        "Blackcoin",
+        "Grantcoin",
+        "CapriCoin",
+        "Rubycoin",
+        "BTC",
+        "LTC",
+        "ETH",
+        "DOGE",
+        "DASH"
+    ]
+}

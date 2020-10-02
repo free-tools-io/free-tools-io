@@ -1,0 +1,34 @@
+<form id='tool-input-form'>
+</form>
+<script type="text/javascript">
+    $('#tool-input-form').jsonForm({
+      schema: {
+        cert: {
+            type: 'string',
+            title: 'Certificate Text',
+            required: true,
+            maxLength: 10000,
+            default: "<%= query.cert ? query.cert : '' %>"
+        }
+    },
+    form: [
+        {
+            key: "cert",
+            type: "textarea"
+        },
+        {
+            type: "submit",
+            title: "OK Go"
+        }   
+    ],
+    onSubmit: function (errors, values) {
+        var url = window.location.href;
+        if(url.indexOf("?") > 0) {
+          url = url.substring(0, url.indexOf("?"));
+        } 
+        url += "?" + jQuery.param(values);
+        window.location.replace(url);
+      }
+    });
+</script>
+  

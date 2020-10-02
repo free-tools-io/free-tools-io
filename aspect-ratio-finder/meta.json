@@ -1,0 +1,19 @@
+{
+    "name": "Aspect Ratio Finder (Photos/Videos)",
+    "description": "Simple tool to find out right aspect ratio for the given dimensions. Very much useful while creating pictures or movies.",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "aspect-ratio@2.1.1"
+    ],
+    "tags": [
+        "aspect",
+        "ratio",
+        "aspect-ratio",
+        "photos",
+        "media",
+        "image",
+        "video",
+        "movie"
+    ]
+}
