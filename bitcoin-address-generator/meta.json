@@ -1,0 +1,21 @@
+{
+    "name": "Bitcoin (BTC) Address Generator",
+    "description": "Generate your own Bitcoin (BTC) wallet address to receive funds",
+    "author": "free-tools.io",
+    "icon": "receipt-outline",
+    "npm-packages": [
+        "bitcoin-address-generator@1.0.2"
+    ],
+    "tags": [
+        "security",
+        "crypto",
+        "currency",
+        "bitcoin",
+        "btc",
+        "finance",
+        "fund",
+        "wallet",
+        "address",
+        "generator"
+    ]
+}
